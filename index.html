@@ -27,7 +27,7 @@
 
         let isBlackBackground = true;
         let lastTime = 0;
-        const colorSwitchInterval = 40;
+        const colorSwitchInterval = 40; //FLASH SPEED
 
         function animate(time) {
             requestAnimationFrame(animate);
@@ -39,8 +39,8 @@
                 lastTime = time;
             }
 
-            cube.rotation.x += 0.03;
-            cube.rotation.y += 0.03;
+            cube.rotation.x += 0.03;    //CUBE ROTATION SPEED X
+            cube.rotation.y += 0.03;    //CUBE ROTATION SPEED Y
 
             renderer.render(scene, camera);
         }
